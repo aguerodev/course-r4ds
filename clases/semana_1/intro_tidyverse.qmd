@@ -1,0 +1,131 @@
+---
+title: " Introducción a Tidyverse"
+subtitle: "Descubriendo una manera sencilla y divertida de relacionarnos con la computación y en análisis de los datos"
+lang: "es"
+toc: true
+code-line-numbers: true
+code-copy: true
+format: html
+include-in-header:
+  text: <script type="text/javascript" src="../../ajustes.js"></script>
+bibliography: references.bib
+editor_options: 
+  chunk_output_type: console
+---
+
+
+
+::: {.overview}
+
+:::{.overview-title}
+Lo que aprenderemos hoy
+:::
+
+:::{.overview-content}
+
+:::: {.columns}
+
+::: {.column width="100%"}
+### Preguntas
++ ¿Qué tan difícil es aprender a programar para un investigador de ciencias sociales?
++ ¿Por qué es R considerado un lenguaje amigable para quienes no son programadores?
++ ¿Qué posibilidades ofrece R para analizar diferentes tipos de datos?
+:::
+
+::: {.column width="100%"}
+### Objetivos
++ Comprender las razones por las cuales R es una herramienta poderosa para el análisis de datos, especialmente para principiantes en programación.
++ Identificar y trabajar con diversos tipos de datos en R.
++ Aprender a importar conjuntos de datos a R desde diferentes fuentes.
++ Utilizar las funciones select, filter, y arrange de dplyr para manipular y preparar datos.
++ Realizar conteos y resúmenes estadísticos básicos con la función count.
++ Crear un gráfico de barras simple para visualizar datos, utilizando ggplot2.
+:::
+::::
+:::
+:::
+
+## ¿Qué es Tidyverse?{.title}
+
+
+::: {.discussion}
+
+::: {.callout-title}
+Ejercicio 1
+:::
+
+:::{.callout-content}
+En los datos descargados encontrarás un archivo llamado `cantones.csv` que contiene información sobre los cantones de Costa Rica. Vamos a cargar este archivo en R para poder analizarlo.
+
+**Pasos a seguir:**
+
++ Asegúrate de tener el paquete `readr` instalado. Si no lo tienes, instálalo con `install.packages("readr")`.
++ Carga el paquete `readr` usando la instrucción `library(readr)`.
++ Usa la función `read_csv` para cargar `cantones.csv` en una variable llamada `datos_cantones`.
++ Revisa las primeras filas del conjunto de datos con `head(datos_cantones)` para asegurarte de que se haya cargado correctamente.
+:::
+
+<details>
+  <summary>Clic para ver la solución</summary>
+  <div class = "details-content">
+
+
+Tu código final debería parecerse a esto. Si no acertaste en el primer intento, no hay problema. Simplemente copia y pega este código en RStudio para avanzar con los próximos ejercicios.
+
+```{r}
+#| eval: false
+
+
+library(readr)
+
+datos_cantones <- read_csv("cantones.csv")
+```
+
+
+  
+</div>
+</details>
+:::
+
+
+
+
+texto de un parrafo de prueba 
+
+::: {.keypoints}
+
+::: {.callout-title}
+Puntos Clave
+:::
+
+:::{.callout-content}
+1. Comienza simple y construye tus gráficos de manera iterativa.
+
+2. La función `ggplot()` inicia un gráfico, y las funciones `geom_` añaden representaciones de tus datos.
+
+3. Utiliza `aes()` cuando estés mapeando una variable desde los datos a una parte del gráfico.
+
+4. Usa `facet_` para particionar un gráfico en múltiples gráficos basados en un factor incluido en el conjunto de datos.
+
+5. Usa las funciones predefinidas `theme_` para cambiar ampliamente la apariencia, y la función `theme()` para ajustes finos.
+
+6. La biblioteca `patchwork` puede combinar gráficos separados en una sola figura.
+7. Utiliza ggsave() para guardar gráficos en tu formato y dimensiones favoritas.
+:::
+
+:::
+
+
+
+
+```{r}
+x <- 5
+x
+```
+
+
+
+
+
+
+

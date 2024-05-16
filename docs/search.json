@@ -1,16 +1,260 @@
 [
   {
+    "objectID": "clases/semana_1/intro_tidyverse.html",
+    "href": "clases/semana_1/intro_tidyverse.html",
+    "title": "Introducción a Tidyverse",
+    "section": "",
+    "text": "Lo que aprenderemos hoy\n\n\n\n\n\n\n\n¿Qué tan difícil es aprender a programar para un investigador de ciencias sociales?\n¿Por qué es R considerado un lenguaje amigable para quienes no son programadores?\n¿Qué posibilidades ofrece R para analizar diferentes tipos de datos?\n\n\n\n\n\n\nComprender las razones por las cuales R es una herramienta poderosa para el análisis de datos, especialmente para principiantes en programación.\nIdentificar y trabajar con diversos tipos de datos en R.\nAprender a importar conjuntos de datos a R desde diferentes fuentes.\nUtilizar las funciones select, filter, y arrange de dplyr para manipular y preparar datos.\nRealizar conteos y resúmenes estadísticos básicos con la función count.\nCrear un gráfico de barras simple para visualizar datos, utilizando ggplot2.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Introducción a tidyverse"
+    ]
+  },
+  {
+    "objectID": "clases/semana_1/intro_tidyverse.html#qué-es-tidyverse",
+    "href": "clases/semana_1/intro_tidyverse.html#qué-es-tidyverse",
+    "title": "Introducción a Tidyverse",
+    "section": "¿Qué es Tidyverse?",
+    "text": "¿Qué es Tidyverse?\n\n\nEjercicio 1\n\n\nEn los datos descargados encontrarás un archivo llamado cantones.csv que contiene información sobre los cantones de Costa Rica. Vamos a cargar este archivo en R para poder analizarlo.\nPasos a seguir:\n\nAsegúrate de tener el paquete readr instalado. Si no lo tienes, instálalo con install.packages(\"readr\").\nCarga el paquete readr usando la instrucción library(readr).\nUsa la función read_csv para cargar cantones.csv en una variable llamada datos_cantones.\nRevisa las primeras filas del conjunto de datos con head(datos_cantones) para asegurarte de que se haya cargado correctamente.\n\n\n\n\nClic para ver la solución\n\n\nTu código final debería parecerse a esto. Si no acertaste en el primer intento, no hay problema. Simplemente copia y pega este código en RStudio para avanzar con los próximos ejercicios.\n\nlibrary(readr)\n\ndatos_cantones &lt;- read_csv(\"cantones.csv\")\n\n\n\n\ntexto de un parrafo de prueba\n\n\nPuntos Clave\n\n\n\nComienza simple y construye tus gráficos de manera iterativa.\nLa función ggplot() inicia un gráfico, y las funciones geom_ añaden representaciones de tus datos.\nUtiliza aes() cuando estés mapeando una variable desde los datos a una parte del gráfico.\nUsa facet_ para particionar un gráfico en múltiples gráficos basados en un factor incluido en el conjunto de datos.\nUsa las funciones predefinidas theme_ para cambiar ampliamente la apariencia, y la función theme() para ajustes finos.\nLa biblioteca patchwork puede combinar gráficos separados en una sola figura.\nUtiliza ggsave() para guardar gráficos en tu formato y dimensiones favoritas.\n\n\n\n\nx &lt;- 5\nx\n\n[1] 5",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Introducción a tidyverse"
+    ]
+  },
+  {
+    "objectID": "profesores.html",
+    "href": "profesores.html",
+    "title": "Profesores",
+    "section": "",
+    "text": "ReutilizaciónEste trabajo está licenciado bajo la Licencia Internacional  Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0). Eres libre de compartir este material siempre que otorgues el crédito adecuado, no lo utilices para fines comerciales, y no hagas obras derivadas.\n(Ver Licencia)Derechos de autorCopyright nombre de los cursos. 2024. Todos los derechos reservados."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "R Para Ciencia De Datos",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n\nReuseEste trabajo está licenciado bajo la Licencia Internacional  Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0). Eres libre de compartir este material siempre que otorgues el crédito adecuado, no lo utilices para fines comerciales, y no hagas obras derivadas.\n(View License)CopyrightCopyright nombre de los cursos. 2024. Todos los derechos reservados."
+  },
+  {
+    "objectID": "codigo_conducta.html",
+    "href": "codigo_conducta.html",
+    "title": "Código de conducta",
+    "section": "",
+    "text": "Nos comprometemos a ofrecer un ambiente educativo seguro y acogedor para todos, sin importar su experiencia, identidad o conocimiento. Este Código de Conducta establece nuestras expectativas para todos los participantes de nuestro curso en línea, así como las consecuencias para comportamientos inaceptables.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Código de Conducta"
+    ]
+  },
+  {
+    "objectID": "codigo_conducta.html#reporte-de-incidentes",
+    "href": "codigo_conducta.html#reporte-de-incidentes",
+    "title": "Código de conducta",
+    "section": "Reporte de Incidentes",
+    "text": "Reporte de Incidentes\n\nLos incidentes deben reportarse a través de un formulario anónimo, garantizando la privacidad y seguridad de quien reporta.\nCada reporte será tratado con seriedad y confidencialidad.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Código de Conducta"
+    ]
+  },
+  {
+    "objectID": "codigo_conducta.html#comportamiento-esperado",
+    "href": "codigo_conducta.html#comportamiento-esperado",
+    "title": "Código de conducta",
+    "section": "Comportamiento Esperado",
+    "text": "Comportamiento Esperado\n\nUtilizar un lenguaje inclusivo y respetuoso.\nRespetar distintas opiniones y experiencias.\nRecibir y dar críticas constructivas de manera positiva.\nPriorizar el bienestar de la comunidad educativa.\nActuar con cortesía y respeto hacia todos.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Código de Conducta"
+    ]
+  },
+  {
+    "objectID": "codigo_conducta.html#comportamiento-inaceptable",
+    "href": "codigo_conducta.html#comportamiento-inaceptable",
+    "title": "Código de conducta",
+    "section": "Comportamiento Inaceptable",
+    "text": "Comportamiento Inaceptable\nCualquier forma de acoso, discriminación o intimidación, incluyendo pero no limitado a:\n\nComentarios ofensivos relacionados con género, orientación sexual, discapacidad, apariencia física, tamaño corporal, raza, religión.\nAmenazas o insultos.\nAtención sexual indeseada o imágenes de contenido sexual.\nInterrupción persistente de las sesiones o comunicaciones.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Código de Conducta"
+    ]
+  },
+  {
+    "objectID": "codigo_conducta.html#consecuencias",
+    "href": "codigo_conducta.html#consecuencias",
+    "title": "Código de conducta",
+    "section": "Consecuencias",
+    "text": "Consecuencias\n\nLos participantes que violen estas reglas serán expulsados del curso sin derecho a reembolso.\nSe les prohibirá la participación en futuras actividades presenciales y en línea.\n\nNos dedicamos a crear un entorno de aprendizaje positivo y enriquecedor para todos. Esperamos que todos los participantes colaboren para asegurar una experiencia educativa segura y respetuosa.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Código de Conducta"
+    ]
+  },
+  {
+    "objectID": "clases/semana_1/zoom.html",
+    "href": "clases/semana_1/zoom.html",
+    "title": "Clase en vivo",
+    "section": "",
+    "text": "Fecha de la Clase: 25 de julio de 2024\nHora (UTC-6): 6:00 p.m",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Clase en vivo (zoom)"
+    ]
+  },
+  {
+    "objectID": "clases/semana_1/zoom.html#detalles-de-la-reunión-de-zoom-para-la-clase",
+    "href": "clases/semana_1/zoom.html#detalles-de-la-reunión-de-zoom-para-la-clase",
+    "title": "Clase en vivo",
+    "section": "",
+    "text": "Fecha de la Clase: 25 de julio de 2024\nHora (UTC-6): 6:00 p.m",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Clase en vivo (zoom)"
+    ]
+  },
+  {
+    "objectID": "clases/semana_1/zoom.html#requisitos-antes-de-ingresar-a-la-clase",
+    "href": "clases/semana_1/zoom.html#requisitos-antes-de-ingresar-a-la-clase",
+    "title": "Clase en vivo",
+    "section": "Requisitos antes de ingresar a la clase",
+    "text": "Requisitos antes de ingresar a la clase\n\nInstalación Previa de Software: Debes tener ya instalado y configurado R y RStudio antes de participar en la sesión. Esto es crucial para poder seguir el ritmo de la clase y participar en los ejercicios de codificación en vivo. Si tienes dudas, puedes revisar la guía de instalación.\nUso de Computadora: La clase está diseñada para llevarse a cabo exclusivamente desde una computadora, no se recomienda participar desde dispositivos móviles o tablets. .\nDisponer de un Micrófono: Es esencial para interactuar durante la sesión.\nLectura del Código de Conducta: Es fundamental leer y comprender el Código de Conducta antes de la clase.\n\n\n\n\n\n\n\nAl ingresar a la sesión de Zoom, confirmas tu aceptación de los términos de nuestro Código de Conducta. Es esencial mantener un ambiente respetuoso y constructivo durante nuestra reunión.\n\n\n\nEnlace para unirse a la Reunión de Zoom Para participar en la clase, por favor, haz clic en el siguiente botón en el momento indicado:\nUnirse a la Reunión de Zoom",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Clase en vivo (zoom)"
+    ]
+  },
+  {
+    "objectID": "clases/instalacion_configuracion.html#verificación-de-la-instalación-de-r-y-rstudio",
+    "href": "clases/instalacion_configuracion.html#verificación-de-la-instalación-de-r-y-rstudio",
+    "title": "Instalación y Configuración de R y RStudio",
+    "section": "Verificación de la Instalación de R y RStudio",
+    "text": "Verificación de la Instalación de R y RStudio\nSi ya has instalado R y RStudio, puede que te preguntes si es necesario seguir los pasos de una nueva instalación. Antes de tomar una decisión, es crucial verificar que tu instalación actual esté completa y actualizada. A menudo, durante la instalación inicial, se pueden pasar por alto algunos componentes esenciales. Aquí te ofrecemos una guía para confirmar si tu instalación cumple con los requisitos necesarios.\n\nPress Ctrl + Shift + R to re-render this page.\n\n\nPara usuarios de Windows:\n\nConfirma que la versión de R sea superior a 4.1.\nAsegúrate de que RStudio esté actualizado a la última versión.\nVerifica si tienes instalado RTools, un componente esencial para el desarrollo.\nVerifica si tienes instalado quarto en una versión superior o igual a la 1.4\n\n\n\nPara usuarios de Mac:\n\nComprueba que la versión de R sea superior a 4.1.\nRStudio debe estar actualizado a su última versión.\nVerifica si tienes instalado quarto en una versión superior o igual a la 1.4\n\nAdemás, para los usuarios de Mac, la instalación requiere pasos adicionales para garantizar la correcta funcionalidad de todos los paquetes. Asegúrate de tener instaladas las siguientes librerías del sistema:\n\ngfortran\ngcc\nxcode\n\nSi tras esta verificación encuentras que tu sistema no cumple con alguno de estos requisitos, o tienes dudas, te recomendamos seguir los pasos de instalación nuevamente para asegurar un entorno de trabajo óptimo con R y RStudio.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Instalación y configuración"
+    ]
+  },
+  {
+    "objectID": "clases/instalacion_configuracion.html#instalación-de-r-y-rstudio-en-windows",
+    "href": "clases/instalacion_configuracion.html#instalación-de-r-y-rstudio-en-windows",
+    "title": "Instalación y Configuración de R y RStudio",
+    "section": "Instalación de R y RStudio en Windows",
+    "text": "Instalación de R y RStudio en Windows",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Instalación y configuración"
+    ]
+  },
+  {
+    "objectID": "clases/instalacion_configuracion.html#instalación-de-r-y-rstudio-en-mac",
+    "href": "clases/instalacion_configuracion.html#instalación-de-r-y-rstudio-en-mac",
+    "title": "Instalación y Configuración de R y RStudio",
+    "section": "Instalación de R y RStudio en Mac",
+    "text": "Instalación de R y RStudio en Mac",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Instalación y configuración"
+    ]
+  },
+  {
+    "objectID": "clases/instalacion_configuracion.html#solicitar-asistencia-tecnica",
+    "href": "clases/instalacion_configuracion.html#solicitar-asistencia-tecnica",
+    "title": "Instalación y Configuración de R y RStudio",
+    "section": "Solicitar asistencia tecnica",
+    "text": "Solicitar asistencia tecnica\nEntendemos que enfrentarse a problemas durante la instalación y configuración de equipos tecnológicos puede resultar particularmente frustrante, especialmente si no te consideras una persona muy técnica. Sin embargo, queremos asegurarte que no estás solo en este proceso y estamos aquí para brindarte el apoyo necesario.\nPara ayudarte a superar estos desafíos y completar el proceso con éxito, te invitamos a agendar una reunión virtual a través de Zoom con uno de nuestros instructores. Ellos te guiarán paso a paso, asegurándose de que tu equipo quede configurado correctamente y listo para usar.\nHaz clic en el siguiente enlace para programar tu reunión y comenzar tu camino hacia una experiencia tecnológica sin estrés.\nProgramar una reunión",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Instalación y configuración"
+    ]
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "About this site\n\n\n\nReuseEste trabajo está licenciado bajo la Licencia Internacional  Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0). Eres libre de compartir este material siempre que otorgues el crédito adecuado, no lo utilices para fines comerciales, y no hagas obras derivadas.\n(View License)CopyrightCopyright nombre de los cursos. 2024. Todos los derechos reservados."
+  },
+  {
+    "objectID": "clases/index.html",
+    "href": "clases/index.html",
+    "title": "Ciencia de datos con R",
+    "section": "",
+    "text": "parte 1\n\n\nparte 2\n\n\nparte 3\n(Wickham 2014)\n\n\n\n\n\nReferencias\n\nWickham, Hadley. 2014. «Tidy Data». Journal of Statistical Software 59 (10). https://doi.org/10.18637/jss.v059.i10.\n\nReutilizaciónEste trabajo está licenciado bajo la Licencia Internacional  Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0). Eres libre de compartir este material siempre que otorgues el crédito adecuado, no lo utilices para fines comerciales, y no hagas obras derivadas.\n(Ver Licencia)Derechos de autorCopyright nombre de los cursos. 2024. Todos los derechos reservados.",
+    "crumbs": [
+      "Lecciones",
+      "Antes de comenzar",
+      "Presentación"
+    ]
+  },
+  {
+    "objectID": "clases/semana_1/presentacion_s1/index.html#hola",
+    "href": "clases/semana_1/presentacion_s1/index.html#hola",
+    "title": "Untitled",
+    "section": "hola",
+    "text": "hola"
+  },
+  {
+    "objectID": "clases/semana_2/demo_s2.html",
+    "href": "clases/semana_2/demo_s2.html",
+    "title": "Titulo demo s2",
+    "section": "",
+    "text": "(Wickham 2014)\n\n\n\n\nReferencias\n\nWickham, Hadley. 2014. «Tidy Data». Journal of Statistical Software 59 (10). https://doi.org/10.18637/jss.v059.i10.\n\nReutilizaciónEste trabajo está licenciado bajo la Licencia Internacional  Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0). Eres libre de compartir este material siempre que otorgues el crédito adecuado, no lo utilices para fines comerciales, y no hagas obras derivadas.\n(Ver Licencia)Derechos de autorCopyright nombre de los cursos. 2024. Todos los derechos reservados.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 2",
+      "demo s2"
+    ]
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "Pregutnas Frecuentes",
+    "section": "",
+    "text": "ReutilizaciónEste trabajo está licenciado bajo la Licencia Internacional  Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0). Eres libre de compartir este material siempre que otorgues el crédito adecuado, no lo utilices para fines comerciales, y no hagas obras derivadas.\n(Ver Licencia)Derechos de autorCopyright nombre de los cursos. 2024. Todos los derechos reservados."
+  },
+  {
+    "objectID": "obtener_ayuda.html",
+    "href": "obtener_ayuda.html",
+    "title": "Obtener Ayuda",
+    "section": "",
+    "text": "link\n\n\n\nReutilizaciónEste trabajo está licenciado bajo la Licencia Internacional  Creative Commons Atribución-NoComercial-SinDerivadas 4.0 (CC BY-NC-ND 4.0). Eres libre de compartir este material siempre que otorgues el crédito adecuado, no lo utilices para fines comerciales, y no hagas obras derivadas.\n(Ver Licencia)Derechos de autorCopyright nombre de los cursos. 2024. Todos los derechos reservados."
+  },
+  {
+    "objectID": "clases/semana_1/recursos.html",
+    "href": "clases/semana_1/recursos.html",
+    "title": "🎥 Grabación de la Clase y Materiales 📚",
+    "section": "",
+    "text": "Una vez terminada la clase, tendrás acceso a la grabación y a todo el material de la lección en esta sección dentro de las siguientes 24 horas.",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Recursos"
+    ]
+  },
+  {
+    "objectID": "clases/semana_1/recursos.html#presentación-y-código",
+    "href": "clases/semana_1/recursos.html#presentación-y-código",
+    "title": "🎥 Grabación de la Clase y Materiales 📚",
+    "section": "Presentación y código",
+    "text": "Presentación y código\n\n\n\nDescargar presentación en PDF",
+    "crumbs": [
+      "Lecciones",
+      "Semana 1",
+      "Recursos"
+    ]
   }
 ]
