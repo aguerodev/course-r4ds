@@ -8,8 +8,6 @@ project:
 
 website:
   navbar:
-    logo: img/logo.svg
-    background: primary
     left:
       - text: "Inicio"
         file: index.qmd
@@ -70,8 +68,9 @@ license:
   type: open-access
   url: https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es
 
-
+lang: es
 format:
+
   html:
     grid:
       sidebar-width: 310px
